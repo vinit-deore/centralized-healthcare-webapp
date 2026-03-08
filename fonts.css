@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@keyframes chs-pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(59,130,246,0.4)); }
+  50% { transform: scale(1.05); filter: drop-shadow(0 0 20px rgba(59,130,246,0.8)); }
+}
+
+.chs-logo-pulse {
+  animation: chs-pulse 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.float-anim {
+  animation: float 3s ease-in-out infinite;
+}
